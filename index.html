@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="styles.css">
+	<link rel="stylesheet" href="fonts/stylesheet.css">
+	<title>CSS - Master CSS</title>
+	<style>
+
+		
+
+	</style>
+</head>
+<body>
+	<header>
+		<h1>CSS: Master CSS</h1>
+	</header>
+	<section class="combinators-container">
+		<h2>Combinators</h2>
+		<div class="combinators-sub-container">
+			<div class="descendant-combinator">
+				<h1>Space Combinator: Descendants <code>.descendant-combinator h1</code></h1>
+				<p>Direct descendant P <code>.descendant-combinator p</code></p>
+				<span>Direct Descendant span<code>.descendant-combinator span</code></span>
+				<div class="sub-descendant-combinator">
+					<p>sub div P, still a descendant <code>.descendant-combinator p</code></p>
+					<span>Sub div Span, still a descendant<code>.descendant-combinator span</code></span>
+				</div>
+				<p>Direct Descendant P <code>.descendant-combinator p</code></p>
+			</div>
+
+			<div class="child-combinator">
+				<h1>Greater Than ( > ) Combinator: Children <code>.child-combinator > h1</code></h1>
+				<p>Direct Child P<code>.child-combinator p and .child-combinator > p</code> applies</p>
+				<span>Direct Child Span<code>.child-combinator span and .child-combinator > span</code> applies</span>
+				<div class="sub-child-combinator">
+					<p>Sub child P, still a descendant but not direct child<code>.child-combinator p</code></p>
+					<span>Sub Child Span, still a descendant but not direct child<code>.child-combinator span
+					</code></span>
+				</div>
+				<p>Direct Child P<code>.child-combinator p and .child-combinator > p</code> applies</p>
+			</div>
+			<div class="adjacent-combinator">
+				<h1>Plus ( + ) Combinator: Adjacent Sibling</h1>
+				<p>Direct Child P and adjacent sibling to h1 <code>.adjacent-combinator h1 + p</code></p>
+				<p>Direct child P, but not adjacent sibling to H1</p>
+				<span>Direct Child Span</span>
+				<div class="sub-adjacent-combinator">
+					<p>Sub child P, still a descendant but not direct child</p>
+					<span>Sub Child Span, still a descendant but not direct child.</span>
+				</div>
+				<p>Direct Child P</p>
+			</div>
+			<div class="general-sibling-combinator">
+				<h1>Tilde ( ~ ) Combinator: General Sibling</h1>
+				<p>Direct Child P and adjacent sibling to h1</p>
+				<p>Direct child P, but not adjacent sibling to H1</p>
+				<span>direct child Span and a general sibling of H1 <code>.general-sibling-combinator h1 ~ span</code></span>
+				<div class="sub-general-combinator">
+					<p>Sub child P, still a descendant but not direct child</p>
+					<span>Sub Child Span, still a descendant but not direct child.</span>
+				</div>
+				<span>direct child Span and a general sibling of H1<code>.general-sibling-combinator h1 ~ span</code></span>
+				<p>Direct Child P</p>
+			</div>	
+		</div>
+	</section>
+	<section class="text-formatting-container">
+		<h2>Text Formatting</h2>
+		<section class="text-formatting-sub-container">
+			<h3>Font Family: Rampart One, tomato color centered text</h3>
+			<p>This is a justified text Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio, quam! Molestiae vitae veniam beatae eos quasi saepe pariatur reprehenderit labore, voluptatem, velit inventore! Nostrum, quidem cumque! Pariatur harum possimus animi.</p>
+			<span>Font-Weight:600 and Font-style:italic</span>
+		</section>
+	</section>	
+	<section class="pseudo-class-container">
+		<h2>
+			Pseudo Classes: special selectors
+		</h2>
+		<section class="pseudo-class-sub-container">
+			<p>
+				<code>a:link</code> applies style to anchor tags with href value only. 
+				<a href="#">Link with href value</a>
+				<a href="">Link without href value</a>
+			</p>
+
+			<div class="dropdown">
+				<a href="#" class="dropdown-btn">
+					Hover on me <code>a:hover</code>
+					<ul class="dropdown-content">
+						<li>1</li>
+						<li>2</li>
+						<li>3</li>
+					</ul>
+				</a>
+				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti consequuntur obcaecati praesentium debitis molestiae nam amet ut, repellat enim assumenda.</p>
+			</div>
+			<section class="children-pseudo-class-container">
+				<p><code>.children-pseudo-class-container > p:first-child</code>=><strong>First Child of .children-pseudo-class-container of type P, </strong><code>.children-pseudo-class-container > p:nth-child(odd)</code>:<strong>will also apply. Whichever code comes last</strong></p>
+
+				<p>
+					<code>.children-pseudo-class-container > p:nth-child(2)</code>=><strong>2 <sup>nd</sup> Child of .children-pseudo-class-container of type P </strong>
+				</p>
+
+				<p>Iste ipsum, molestias, quos vero officiis animi ex veritatis voluptate quidem praesentium sapiente obcaecati ea?</p>
+
+				<p>Quaerat quidem, facere labore velit laborum beatae a quod doloribus assumenda eveniet, error maxime dignissimos.</p>
+
+				<p>Expedita eos libero, obcaecati aliquam autem pariatur deserunt maiores? Blanditiis, nobis ipsa tempora obcaecati iusto?</p>
+
+				<p>Illo eveniet provident quam, possimus, sit praesentium, deleniti eius vero dignissimos mollitia porro at sunt.</p>
+
+				<p>Velit voluptas facere nesciunt necessitatibus veritatis quae praesentium corporis corrupti cumque doloremque, pariatur, quas, labore!</p>
+
+				<p>Voluptatem expedita, exercitationem nam, consequatur natus dolore ratione iste quaerat accusantium aperiam laudantium vel amet.</p>
+
+				<p>Nesciunt sunt obcaecati, laboriosam aperiam necessitatibus laborum, suscipit ut dolorem, ipsam magnam laudantium dignissimos officiis.</p>
+
+				<p><code>.children-pseudo-class-container > p:last-child</code> <strong>Last Child of .children-pseudo-class-container of type P</strong><code>.children-pseudo-class-container > p:nth-child(even)</code> <strong>will also apply. Whichever code comes last</strong></p>
+
+			</section>
+		</section>
+
+	</section>
+	<section class="pseudo-elements-container">
+		<h2>
+			Pseudo Elements: special styles
+		</h2>
+		<section class="pseudo-elements-sub-container">
+			<h3>.pseudo-elements-sub-container h3::first-letter</h3>
+			<p>.pseudo-elements-sub-container p::before</p>
+		</section>
+	</section>		
+</body>
+</html>

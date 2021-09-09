@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Animations</title>
+	<link rel="stylesheet" href="styles.css">
+	<style type="text/css">
+		
+		body{
+			max-height: 100vh;
+			background-image: url(images/blur-city.jpeg);
+			background-repeat: no-repeat;
+			background-position: center;
+			background-attachment: fixed;
+			background-size: 100% 100%;
+		}
+
+		@keyframes anims1{
+			0%{
+				width: 10px;
+				height: 10px;
+				background-color: #F3A4A4;
+			}
+
+			12.5%{
+				width: 90px;
+				height: 10px;
+				left: 0px;
+				top: 0px;
+				background-color: violet;
+			}
+
+			25%{
+				width: 10px;
+				height: 10px;
+				top: 0px;
+				left: 80px;
+				background-color: indigo;
+			}
+			
+
+			37.5%{
+				width: 10px;
+				height: 50px;
+				top: 0px;
+				left: 80px;
+				background-color: blue;
+			}
+			
+			50%{
+				width: 10px;
+				height: 10px;
+				top: 50px;
+				left: 80px;
+				background-color: green;
+			}
+
+			
+			62.5%{
+				width: 90px;
+				height: 10px;
+				top: 50px;
+				left: 0px;
+				background-color: yellow;
+
+			}
+
+			75%{
+				width: 10px;
+				height: 10px;
+				top: 50px;
+				right: 80px;
+				background-color: orange;
+			}
+
+			87.5%{
+				width: 10px;
+				height: 50px;
+				top: 0px;
+				left: 0px;
+				background-color: red;
+			}
+
+			100%{
+				width: 10px;
+				height: 10px;
+				background-color: #F3A4A4;	
+			}
+		}
+
+		.animation-container1{
+			width: 100%;
+			height: 100vh;
+			/*margin: 0.5em auto;*/
+			overflow: auto;
+			background-color: black;
+			position: absolute;
+			top: 0;
+			left: 0;
+			opacity: 0.8;
+		}		
+
+		.animation-box{
+			height: 10px;
+			width: 10px;
+			margin: 45vh 0px 0px 45%;
+			position: absolute;
+			top: 0px;
+			left: 0px;
+		}
+
+		.box1{
+			background-color: #F3A4A4;
+			animation-name: "anims1";
+			animation-duration: 4s;
+			animation-iteration-count: infinite;
+			animation-timing-function: ease-in-out;
+		}
+		.box2{background-color: #8361F0;}
+		.box3{background-color: #ED6F31;}
+
+		.animation-container1 + div{
+
+		}
+		.animation-container1 + div::before {
+		  clear: both;
+		  content: "";
+		  display: table;
+		  margin-top: -1px;
+		  height: 0;
+		}
+
+		.animation-container1 + div h1{
+			color: green;
+			mix-blend-mode: lighten;
+			width: 80%;
+			text-align: center;
+			margin: 45vh auto 0px;
+			/*g*/
+		}
+	</style>
+</head>
+<body>
+	<div class="animation-container1">
+		<div class="animation-box box1"></div>
+		<!-- <div class="animation-box box2"></div>
+		<div class="animation-box box3"></div> -->
+	</div>
+	<div>
+		<h1>Main Heading</h1>
+	</div>
+	<script>
+		setTimeout(function(){
+			document.querySelector(".animation-container1").style.display = "none";
+			document.querySelector(".animation-container1 + div h1").style.mixBlendMode = "multiply";
+		}, 5000);
+	</script>
+</body>
+</html>

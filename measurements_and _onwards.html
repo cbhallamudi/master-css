@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Measurements and Onwards</title>
+	<link rel="stylesheet" href="./styles.css">
+	<style>
+		
+
+	</style>
+</head>
+<body>
+	<div class="measurements-container">
+		<p id="normal-em">em is 16 px. font-size: 2em; (2 * 16px = 32px)</p>
+
+		<div class="em-parent">
+			<p id="em-child">
+				em size varies according to it's parent font-size. <code>.em-parent{font-size:10px} and #em-child{font-size: 2em;}</code>. So, the font-size of em-child will be 2 * 10px = 20px. Since font-size of its parent is 10px
+			</p>
+		</div>
+
+		<div class="rem-parent">
+			<h2 id="rem-h1">Rem</h2>
+			<p id="rem-child">
+				rem size varies according to the root element's font-size. That is <code>&lt;html&gt;</code>. Generally, html size is 16px. <code>#rem-child{
+    font-size: 2rem;
+}</code> so it will be 2 * 16px = 32px;
+			</p>
+		</div>
+
+		<div class="em-margin-parent">
+			<p id="em-margin-child">
+				Margin-top will be 24px, as the font-size of the element is 12px. And the 2em margin-top will result in 2 * font-size of the element = 24px;
+			</p>
+		</div>
+		<div class="rem-margin-parent">
+			<p id="rem-margin-child">
+				Margin-top will be 32px. The font-size property will not effect rem. 2rem margin-top will result in 2 * 16px = 32px;
+			</p>
+		</div>
+	</div>
+</body>
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Floats</title>
+	<link rel="stylesheet" href="styles.css">
+	<style>
+		.float-container{
+			background-color: #F37F7F;
+			padding: 5px;
+		}
+
+		@keyframes float-animation{
+			0% {float: left;},
+			100% {float: right;}
+		}
+
+		.sub-float1{
+			width: 30%;
+			overflow: auto;
+			background-color: #DBDF74;
+			float: left;
+			animation: float-animation 10s linear infinite;
+			animation-direction: alternate;
+		}
+
+/*		.sub-float2{
+			animation: float-animation2 10s linear infinite;
+			width: 30%;
+			overflow: auto;
+			background-color: #74DFC7;
+			float: right;	
+		}*/
+
+
+		.clear-method-3::after{
+			content: "";
+			display: block;
+			clear: both;
+		}
+
+		.clear{
+			overflow: auto;
+		}
+	</style>
+</head>
+<body>
+	<div class="float-container clear-method-3">
+		<div class="sub-float1">
+			<p>lorem<code>float:left</code></p>
+		</div>
+		<!-- <div class="sub-float2">
+			<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cupiditate aliquam inventore quis quae vitae vero nulla, nemo dolor, quia harum id molestias, non voluptatum cumque vel quaerat asperiores alias dicta.</p>
+		</div> -->
+		<!-- <div class="clear"></div> -->
+	</div>
+	
+</body>
+</html>
