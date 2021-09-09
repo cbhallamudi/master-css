@@ -432,7 +432,7 @@ a ul > li{
 	border: 5px double red;
 	margin: 10px auto 5px;
 	padding: 10px;
-	background-image: url(images/blur-city.jpeg);
+	background-image: url(images/blur-city.jpg);
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: top left; 
@@ -467,7 +467,7 @@ a ul > li{
 .bg4{
 	min-height: 700px;
 	margin: auto;
-	background: url("images/blur-city.jpeg") no-repeat left top / 100% 50%,  url("images/fish-kiss.jpg") no-repeat right bottom / 100% 50%;
+	background: url("images/blur-city.jpg") no-repeat left top / 100% 50%,  url("images/fish-kiss.jpg") no-repeat right bottom / 100% 50%;
 	background-origin: content-box;
 	background-clip: padding-box;
 	/*background:  background-color	background-image background-repeat background-attachment background-position*/
