@@ -8,15 +8,37 @@
 	<style>
 
 		.flex-container{
+			min-height: 200px;
 			padding: 5px;
 			margin: 2.5px auto;
 			display: flex; /*inline-flex will make the div inline*/
-			flex-direction: column; /*default is row. row-reverse and column reverse are other values*/
+			
+			/*flex-direction: row; */
+			/*default is row. column, row-reverse and column reverse are other values*/
+			
+			/*flex-wrap: nowrap; */
+			/*default value is nowrap. wrap and wrap-reverse are other values*/
+			
+			flex-flow: row wrap; 
+			/*shorthand for flex-direction and flex-wrap*/
+
+			justify-content: space-evenly; 
+			/*flex-start is the default*/
+			/*flex-end aligns the element to the right side of the container*/
+			/*center keeps the elements in the center of the container*/
+			/*space-between keeps the first and last elements at their respective edges and keeps the betwwen elements with even space between them*/
+			/*space-around makes the elements to take even amount of space on the left and right*/
+			/*space-evenly will keep the same amount of space between the edges and elements and between the elements as well*/
+
+			/*align-content: center;*/
+			/*maintains the spaces on the vertical axis and works fine if there is wrap and multiline divs*/
+			
+			align-items: center; 
 		}
 
 		.flex-container1-item{
 			padding: 10px;
-			margin: 0.2% 0.2%;
+			margin: 0% 0.2%;
 			text-align: center;
 			color: white;
 			font-size: 1.5rem;
@@ -33,6 +55,33 @@
 			background-color: #84E884;
 		}
 
+		.item1{
+			align-self: stretch;
+		}
+		.item5{
+			order: 2; /*higher the order, last the place*/
+			align-self: flex-start; /*aligns the individual elements on the vertical axis*/
+		}
+		.item3{
+			width: 200px;
+			flex-grow: 1;
+			flex-shrink: 1;
+		}
+		.item4{
+			width: 200px;
+			flex-grow: 2;
+			flex-shrink: 2;
+		}
+		.item2{
+			width: 200px;
+			height: 300px;
+			flex-basis: 100px;
+			/*flex-basis will affect the width or height of the item according to the flex-direction. If row, width of the item will be maintained at 100px and vice-versa*/
+
+			flex: 0 1 auto;
+			/*shorthand for flex item properties 'grow shrink basis'*/
+		}
+
 	</style>
 </head>
 <body>
@@ -40,8 +89,8 @@
 	<div class="flex-container container1">
 		<div class="flex-container1-item item1">1</div>
 		<div class="flex-container1-item item2">2</div>
-		<div class="flex-container1-item item3">3</div>
 		<div class="flex-container1-item item4">4</div>
+		<div class="flex-container1-item item3">3</div>
 		<div class="flex-container1-item item5">5</div>
 	</div>
 	
