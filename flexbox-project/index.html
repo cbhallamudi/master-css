@@ -18,7 +18,10 @@
 
 	<link rel="stylesheet" href="./css/styles.css">
 </head>
-<body>
+<body onload="loaderFn()">
+	<div id="loading">
+	  <img id="loading-image" src="images/loading2.gif" alt="Loading..." />
+	</div>
 	<!-- Navbar -->
 	<nav class="navbar">
 		<input type="checkbox" class="checkbox" id="click">
@@ -86,8 +89,8 @@
 			<ul class="navigation-list">
 				<li class="navigation-item"><a href="#" class="navigation-link">home</a></li>
 				<li class="navigation-item"><a href="#" class="navigation-link">about us</a></li>
-				<li class="navigation-item"><a href="#" class="navigation-link">rooms</a></li>
-				<li class="navigation-item"><a href="#" class="navigation-link">events</a></li>
+				<li class="navigation-item"><a href="#" class="navigation-link">solutions</a></li>
+				<li class="navigation-item"><a href="#" class="navigation-link">clients</a></li>
 				<li class="navigation-item"><a href="#" class="navigation-link">customers</a></li>
 				<li class="navigation-item"><a href="#" class="navigation-link">contact</a></li>
 			</ul>
@@ -105,7 +108,7 @@
 	<header class="header">
 		<div class="brand">
 			<div class="brand-logo">
-				<img src="../images/bcv-1-logo.png" alt="" width="80">
+				<img src="images/bcv-1-logo.png" alt="" width="80">
 			</div>
 		    <h3 class="header-heading">Web-Developer</h3>
 		</div>
@@ -117,5 +120,242 @@
 		</div>
 	</header>
 	<!-- Header Ends -->
+
+	<!-- about us -->
+	
+	<section class="about-us">
+		<div class="about-us-content">
+			<h2 class="about-us-heading">about us</h2>
+			<div class="underlines">
+				<div class="small-underline"></div>
+				<div class="big-underline"></div>
+			</div>
+			<p class="about-us-paragraph">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestiae, neque dolores ullam aut modi delectus, libero odio. Vero voluptate, dolor consequatur eum corrupti. Tempora, pariatur natus rem, possimus molestiae fugit? Nobis officia, dolor rem assumenda quis enim tempora, aspernatur id sequi corrupti magni, accusamus quia libero qui quae! Laboriosam, quia?</p>
+			<button class="about-us-btn">
+				know here
+				<i class="fas fa-angle-double-right"></i>
+			</button>
+		</div>
+		<div class="about-us-images-section">
+			<img src="images/web-development.png" alt="" class="about-us-images about-us-image-1">
+			<img src="images/Digital-Marketing.png" alt="" class="about-us-images about-us-image-2">
+			<img src="images/website-maintenance.png" alt="" class="about-us-images about-us-image-3">
+			<img src="images/Domain-hosting.png" alt="" class="about-us-images about-us-image-4">
+		</div>
+	</section>			
+
+	<!-- about us ends -->
+
+	<!-- solutions -->
+	<section class="solutions">
+		<div class="common-header">
+			<h2 class="common-heading">solutions</h2>
+			<div class="underlines">
+				<div class="small-underline"></div>
+				<div class="big-underline"></div>
+			</div>
+		</div>
+		<div class="solutions-card-wrapper">
+			<div class="solution-card">
+				<img src="images/web-development.png" alt="" class="solution-image">
+				<div class="solution-card-content">
+					<h3 class="solution-card-heading">web development</h3>
+					<p class="solution-card-paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa veritatis animi nostrum dolor soluta maiores.</p>
+					<p class="solution-price">&#8377;5000</p>
+					<button class="solution-card-btn">get it 
+						<i class="fas fa-angle-double-right"></i>
+					</button>
+				</div>
+			</div>
+			<div class="solution-card">
+				<img src="images/Domain-hosting.png" alt="" class="solution-image">
+				<div class="solution-card-content">
+					<h3 class="solution-card-heading">web hosting</h3>
+					<p class="solution-card-paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa veritatis animi nostrum dolor soluta maiores.</p>
+					<p class="solution-price">&#8377;10000</p>
+					<button class="solution-card-btn">get it 
+						<i class="fas fa-angle-double-right"></i>
+					</button>
+				</div>
+			</div>
+			<div class="solution-card">
+				<img src="images/Digital-Marketing.png" alt="" class="solution-image">
+				<div class="solution-card-content">
+					<h3 class="solution-card-heading">digital marketing</h3>
+					<p class="solution-card-paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa veritatis animi nostrum dolor soluta maiores.</p>
+					<p class="solution-price">&#8377;5000</p>
+					<button class="solution-card-btn">get it 
+						<i class="fas fa-angle-double-right"></i>
+					</button>
+				</div>
+			</div>
+			<div class="solution-card">
+				<img src="images/website-maintenance.png" alt="" class="solution-image">
+				<div class="solution-card-content">
+					<h3 class="solution-card-heading">maintenance and support</h3>
+					<p class="solution-card-paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa veritatis animi nostrum dolor soluta maiores.</p>
+					<p class="solution-price">&#8377;10000</p>
+					<button class="solution-card-btn">get it 
+						<i class="fas fa-angle-double-right"></i>
+					</button>
+				</div>
+			</div>
+		</div>
+		<div class="solutions-btn-wrapper">
+			<button class="solutions-btn">know more</button>
+		</div>
+	</section>	
+	<!-- solutions ends -->
+
+	<!-- clients -->
+	
+	<section class="clients">
+		<div class="common-header">
+			<h2 class="common-heading">our clients</h2>
+			<div class="underlines">
+				<div class="small-underline"></div>
+				<div class="big-underline"></div>
+			</div>
+		</div>
+
+		<p class="clients-paragraph">
+			Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut, excepturi odio cum alias, distinctio culpa quaerat ducimus ea sint molestiae?
+		</p>
+
+		<div class="clients-card-wrapper">
+			<div class="client-card">
+				<div class="client-image-wrapper">
+					<img src="images/client-image-1.png" alt="" class="client-image">
+				</div>
+				<div class="client-info">
+					<h3 class="client-full-name">rajeswari</h3>
+					<p class="client-para-1">zphs</p>
+					<p class="client-para-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo, doloremque excepturi assumenda vitae, sunt perspiciatis tenetur laborum odit consequuntur ad.</p>
+				</div>
+			</div>
+			<div class="client-card">
+				<div class="client-image-wrapper">
+					<img src="images/client-image-2.png" alt="" class="client-image">
+				</div>
+				<div class="client-info">
+					<h3 class="client-full-name">bhavani</h3>
+					<p class="client-para-1">house wife</p>
+					<p class="client-para-2">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illo dicta ad dolore aliquid reprehenderit sint voluptate tenetur delectus autem tempore.</p>
+				</div>
+			</div>
+		</div>
+
+	</section>
+
+	<!-- clients ends -->
+
+	<!-- footer -->
+	<footer class="footer">
+		<div class="main-part">
+			<div class="footer-list-wrapper">
+				<h2 class="footer-heading">BCV</h2>
+				<ul class="footer-list">
+					<li class="footer-list-item">
+						<a href="" class="footer-list-link">
+							support@bcv.com
+						</a>
+					</li>
+					<li class="footer-list-item">
+						<a href="" class="footer-list-link">
+							chinnamushidiwada, visakhapatnam.
+						</a>
+					</li>
+					<li class="footer-list-item">
+						<a href="" class="footer-list-link">
+							Tel: +91 1234 567 890
+						</a>
+					</li>
+				</ul>
+			</div>
+			<div class="footer-list-wrapper">
+				<h2 class="footer-heading">explore</h2>
+				<ul class="footer-list">
+					<li class="footer-list-item">
+						<a href="" class="footer-list-link">
+							home
+						</a>
+					</li>
+					<li class="footer-list-item">
+						<a href="" class="footer-list-link">
+							about us
+						</a>
+					</li>
+					<li class="footer-list-item">
+						<a href="" class="footer-list-link">
+							solutions
+						</a>
+					</li>
+					<li class="footer-list-item">
+						<a href="" class="footer-list-link">
+							our clients
+						</a>
+					</li>
+					<li class="footer-list-item">
+						<a href="" class="footer-list-link">
+							contact
+						</a>
+					</li>
+				</ul>
+			</div>
+			<div class="contact">
+				<h3 class="footer-heading">contact</h3>
+				<p>sign up for updates</p>
+				<form action="" class="footer-form">
+					<input type="text" placeholder="enter email here..." class="footer-input">
+					<button class="footer-btn">sign up</button>
+				</form>
+			</div>
+			<div class="gallery">
+				<h3 class="footer-heading">gallery</h3>
+				<div class="gallery-images">
+					<div class="footer-image-wrapper">
+						<img src="images/footer-image-1.png" alt="" class="footer-image">
+					</div>
+					<div class="footer-image-wrapper">
+						<img src="images/footer-image-2.png" alt="" class="footer-image">
+					</div>
+					<div class="footer-image-wrapper">
+						<img src="images/footer-image-3.png" alt="" class="footer-image">
+					</div>
+					<div class="footer-image-wrapper">
+						<img src="images/footer-image-4.png" alt="" class="footer-image">
+					</div>
+					<div class="footer-image-wrapper">
+						<img src="images/footer-image-5.png" alt="" class="footer-image">
+					</div>
+					<div class="footer-image-wrapper">
+						<img src="images/footer-image-6.png" alt="" class="footer-image">
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="creator-part">
+			<div class="copyright-text">
+				<p>copy right &copy; 
+					<script>document.write(new Date().getFullYear());</script>.
+					BCV. all rights registered &reg;
+				</p>
+			</div>
+			<div class="text-right">
+				<p>
+					made with 
+					<i class="fas fa-heart"></i>by 
+					<span>chaitanya</span>
+				</p>
+			</div>
+		</div>
+	</footer>
+
+	<!-- footer ends -->
+	<script type="text/javascript">
+		function loaderFn() {
+			document.getElementById('loading').style.display = "none";
+		}
+	</script>
 </body>
 </html>
