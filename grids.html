@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Grids</title>
+	<link rel="stylesheet" href="styles.css">
+	<style>
+	.grid-container {
+			width: 800px;
+			background: linear-gradient(to right, #222 33%, #444 66%, #222);
+			margin: 40px auto;
+			display: grid;
+			grid-template-rows: 100px 100px;
+			grid-template-columns: 250px 250px 250px;
+			grid-row-gap: 10px;
+			grid-column-gap: 25px;
+		}
+	.grid-container-1{
+		width: 800px;
+		height: 500px;
+		display: grid;
+		background: #ddd;
+		margin: 0px auto 40px;
+		grid-template-rows: repeat(2, 1fr) 300px;
+		grid-template-columns: 500px 1fr;
+		grid-row-gap: 10px;
+		grid-column-gap: 25px;
+	}	
+
+	.grid-container-2{
+		width: 800px;
+		height: 300px;
+		display: grid;
+		background: #ddd;
+		margin: 0px auto 40px;
+		grid-template-rows: 1fr 1fr;
+		grid-template-columns: repeat(3, 1fr);
+	}	
+		.item{
+			padding: 5px;
+			font-size: 50px;
+			color: #222;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}
+
+		.item-1{
+			background: pink;
+		}
+		.item-2{
+			background: green;
+		}
+		.item-3{
+			background: hotpink;
+		}
+		.item-4{
+			background: red;
+		}
+		.item-5{
+			background: black;
+			color: #fff;
+		}
+		.item-6{
+			background: #f70;
+		}
+		.item-7{
+			background: royalblue;
+		}
+		.item-8{
+			background: green;
+		}
+		.item-9{
+			background: purple;
+		}
+		.item-10{
+			background: #f70;
+		}
+
+		.grid-container-2 .item-1{
+			background: mediumslateblue;
+			grid-column: 3 / 4; /*column start grid line / column end grid line*/
+			grid-row: 2 / 3;/*row start grid line / row end grid line*/
+		}
+		.grid-container-2 .item-2{
+			background: gold;
+			grid-area:  2/2/3/3; /* column-start / row-start / column-end / row-end */
+			z-index: +9;
+			opacity: 0.5;
+		}
+		.grid-container-2 .item-3{
+			grid-area:  1/1/3/4; /* row-start / column-start / row-end / column-end */
+		}
+	</style>
+</head>
+<body>
+	<div class="grid-container">
+		<div class="item item-1">1</div>
+		<div class="item item-2">2</div>
+		<div class="item item-3">3</div>
+		<div class="item item-4">4</div>
+		<div class="item item-5">5</div>
+		<div class="item item-6">6</div>
+		<div class="item item-7">7</div>
+		<div class="item item-8">8</div>
+		<div class="item item-9">9</div>
+		<div class="item item-10">10</div>
+	</div>
+	<div class="grid-container-1">
+		<div class="item item-1">item 1</div>
+		<div class="item item-2">item 2</div>
+		<div class="item item-3">item 3</div>
+		<div class="item item-4">item 4</div>
+		<div class="item item-5">item 5</div>
+		<div class="item item-6">item 6</div>
+	</div>
+
+	<h2>positioning</h2>
+	<div class="grid-container-2">
+		<div class="item item-1">item 1</div>
+		<div class="item item-2">item 2</div>
+		<div class="item item-3">item 3</div>
+		<div class="item item-4">item 4</div>
+		<div class="item item-5">item 5</div>
+		<div class="item item-6">item 6</div>
+	</div>
+</body>
+</html>

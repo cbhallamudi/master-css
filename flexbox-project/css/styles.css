@@ -14,7 +14,7 @@ body{
   left: 0;
   text-align: center;
   opacity: 0.9;
-  background-color: #fff;
+  background-color: #000;
   z-index: 99;
 }
 
@@ -838,7 +838,109 @@ body{
 	}
 }
 
-/*
+/*@media screen and (min-width: 320px){
+	html{
+		font-size: 43.7%;
+	}
+}*/
+
+@media screen and ((min-width: 992px) and (max-width: 1072px)){
+	.about-us-image-1:hover {
+		transform: scale(2,2.25) translate(-21%,-36%);
+		z-index: +999;
+	}
+	.about-us-image-2:hover {
+		transform: scale(2,2.25) translate(-21%,-36%);
+		z-index: +999;
+	}
+	.about-us-image-3:hover {
+		transform: scale(2,2.25) translate(-21%,-36%);
+		z-index: +999;
+	}
+	.about-us-image-4:hover {
+		transform: scale(2,2.25) translate(-21%,-36%);
+		z-index: +999;
+	}
+}
+@media screen and (max-width: 991px){
+	.about-us-image-1 {
+		pointer-events: none;
+	}
+	.about-us-image-2 {
+		pointer-events: none;
+	}
+	.about-us-image-3 {
+		pointer-events: none;
+	}
+	.about-us-image-4 {
+		pointer-events: none;
+	}
+}
+@media screen and (max-width: 880px){
+	.about-us{
+		flex-direction: column;
+	}
+	.about-us-images-section{
+		position: static;
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+		margin: 0rem 0rem 5rem;
+	}
+	.about-us-images{
+		position: static;
+		margin: 0.5rem 2rem;
+
+	}
+
+	.about-us-image-1 {
+		transform: none;
+	}
+	.about-us-image-2 {
+		transform: none;
+	}
+	.about-us-image-3 {
+		transform: none;
+	}
+	.about-us-image-4 {
+		transform: none;
+	}
+}
+
+@media screen and (max-width: 690px){
+	.about-us-images{
+		width: 20rem;
+	}
+}@media screen and (max-width: 563px){
+	.about-us-images{
+		width: 17rem;
+	}
+}@media screen and (max-width: 503px){
+	.about-us-images{
+		width: 17rem;
+		margin: 0.5rem 0.5rem;
+	}
+}@media screen and (max-width: 443px){
+	
+	.about-us-content{
+		padding: 2rem;
+	}
+
+	.about-us-images{
+		width: 15rem;
+	}
+
+	.about-us-paragraph{
+		text-align: justify;
+	}
+}@media screen and (max-width: 403px){
+	
+	.about-us-images{
+		display: none
+	}
+}
+
+
 	@media screen and (max-width: 604px){
 		html{
 			font-size: 50%;
@@ -865,5 +967,5 @@ body{
 			font-size: 32%;
 		}
 	}
-*/
+
 /*Responsive Ends*/
