@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Grids Naming</title>
+	<style type="text/css">
+		.grids-expimp-container{
+			width: 800px;
+			background-color: #dedede;
+			margin: auto;
+			display: grid;
+			grid-template-columns: repeat(2, 1fr);
+			grid-template-rows: repeat(2, 100px); /*explicit rows are only 2 rows*/
+
+			/*grid-auto-rows: 150px; */
+			/*default implicit grid items will be rows. we can change the implicit grid items to columns using grid-auto-flow*/
+			/*when the grid flow is changed to column, grid-auto-rows should be changed to grid-auto-columns*/
+			grid-auto-columns: 200px;
+			
+			grid-auto-flow: column;
+
+			grid-gap: 1rem;
+		}	
+
+		.item{
+			text-align: center;
+			font-size: 2rem;
+			color: #66fcf1;
+			padding-top: 0.5em;
+			background-color: #202833;
+
+		}
+
+	</style>
+</head>
+<body>
+	<div class="grids-expimp-container">
+		<div class="item">item 1</div>
+		<div class="item">item 2</div>
+		<div class="item">item 3</div>
+		<div class="item">item 4</div>
+		<div class="item">item 5</div>
+		<div class="item">item 6</div>
+		<div class="item">item 7</div>
+		<div class="item">item 8</div>
+	</div>
+</body>
+</html>

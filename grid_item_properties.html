@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Grids Naming</title>
+	<style type="text/css">
+	.main-grids-container{
+		width: 98%;
+		margin: auto;
+		background-color: #66fcf1;
+	}
+		.grids-just-align-items-container{
+			width: 95%;
+			height: 600px;
+			background-color: #dedede;
+			padding: 0.5rem;
+			margin: auto;
+			display: grid;
+			grid-gap: 1rem;
+			grid-template-columns: 150px 150px 150px 150px;
+			grid-template-rows: 150px 150px;
+			
+			justify-items: center; 
+			/*this property converts items into inline items and places the item horizontally. other values are stretch (default),start and end*/
+			
+			align-items: center; 
+			/*this property converts items into inline items and places the item vertically. other values are stretch (default),start and end*/
+
+			justify-content: end;
+			align-content: center;
+		}	
+
+		.item{
+			text-align: center;
+			font-size: 2rem;
+			color: #66fcf1;
+			padding-top: 0.5rem;
+			background-color: #202833;
+		}
+
+		.speacial{
+			justify-self: end;
+			/*this property converts individual items into inline items and places the item horizontally. other values are stretch (default),start and end*/
+			
+			align-self: end;
+			/*this property converts individual items into inline items and places the item vertically. other values are stretch (default),start and end*/
+		}
+
+	</style>
+</head>
+<body>
+	<div class="main-grids-container">
+		<div class="grids-just-align-items-container">
+			<div class="item">item 1</div>
+			<div class="item">item 2</div>
+			<div class="item speacial">item 3</div>
+			<div class="item">item 4</div>
+			<div class="item">item 5</div>
+			<div class="item">item 6</div>
+			<div class="item">item 7</div>
+			<div class="item">item 8</div>
+		</div>
+	</div>
+</body>
+</html>
